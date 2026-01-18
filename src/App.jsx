@@ -34,7 +34,6 @@ bn        } catch (error) {
     <div className="min-h-screen bg-white text-slate-900 font-sans">
     {/* --- Header --- */}
     <Header/>
-    {/* --- Hero Section --- */}
     {/* --- Featured Products --- */}
       <section className="py-20 max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-end mb-12">

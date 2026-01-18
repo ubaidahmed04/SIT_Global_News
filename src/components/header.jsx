@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="bg-white border-b sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-red-600 tracking-tighter uppercase">Global News</h1>
+        <h1 className="text-3xl font-bold text-red-500 tracking-tighter uppercase">Global News</h1>
         
         <nav className="hidden md:flex space-x-6 font-medium text-gray-700">
           {categories.map(cat => (
