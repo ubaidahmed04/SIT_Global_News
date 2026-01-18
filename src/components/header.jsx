@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const Header = () => {
+  const navigate = useNavigate() 
   const categories = ['Politics', 'Technology', 'Sports', 'Business', 'Health'];
   
   return (
@@ -11,7 +12,11 @@ const Header = () => {
         
         <nav className="hidden md:flex space-x-6 font-medium text-gray-700">
           {categories.map(cat => (
-            <span key={cat}  className="hover:text-red-600 transition">{cat}</span>
+              <>
+              {/* <Link to={``}> */}
+            <span key={cat} onClick={()=>navigate(`/news/${cat}`)}  className="hover:text-red-600 transition">{cat}</span>
+            {/* </Link> */}
+              </>
           ))}
         </nav>
 
